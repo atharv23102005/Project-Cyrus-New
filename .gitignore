@@ -1,0 +1,19 @@
+# C++ Compiled Executables & Objects
+*.exe
+*.o
+*.obj
+*.out
+*.app
+bin/
+build/
+
+# IDE Files
+.vscode/
+.idea/
+*.sln
+*.vcxproj
+*.user
+
+# OS Files
+.DS_Store
+Thumbs.db

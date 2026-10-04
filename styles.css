@@ -1,0 +1,76 @@
+/*
+ * PROJECT CYRUS — Neon Blue Security Dashboard Styles
+ */
+
+/* CRT Overlay Grid */
+.crt-overlay {
+    background: linear-gradient(
+        rgba(10, 18, 36, 0) 50%, 
+        rgba(0, 0, 0, 0.25) 50%
+    ), linear-gradient(
+        90deg,
+        rgba(0, 240, 255, 0.02),
+        rgba(0, 119, 255, 0.01),
+        rgba(0, 240, 255, 0.02)
+    );
+    background-size: 100% 3px, 6px 100%;
+}
+
+/* Marquee Ticker */
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Tab Navigation Styling */
+.nav-tab.active {
+    color: #00f0ff !important;
+    border-bottom-color: #00f0ff !important;
+    background-color: #0a1224 !important;
+    box-shadow: 0 -5px 15px rgba(0, 240, 255, 0.15);
+}
+
+/* Pipeline Step Node Animations */
+.pipeline-step {
+    transition: all 0.25s ease-in-out;
+}
+
+.pipeline-step.active {
+    border-color: #00f0ff !important;
+    background-color: rgba(0, 240, 255, 0.12) !important;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+.pipeline-step.active-red {
+    border-color: #ff0055 !important;
+    background-color: rgba(255, 0, 85, 0.15) !important;
+    box-shadow: 0 0 15px rgba(255, 0, 85, 0.5);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050a14;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #142342;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00f0ff;
+}
